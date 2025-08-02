@@ -1,9 +1,13 @@
-[gd_resource type="Resource" script_class="Element" load_steps=2 format=3 uid="uid://shdfxunpdg36"]
+[gd_resource type="Resource" script_class="Element" load_steps=4 format=3 uid="uid://c8fsu1jhr0npt"]
 
+[ext_resource type="Resource" uid="uid://bouh3b51qqrmp" path="res://examples/earth.tres" id="1_1sedc"]
 [ext_resource type="Script" uid="uid://cti6rdk71imnh" path="res://module/Element.cs" id="1_l8dv0"]
+[ext_resource type="Resource" uid="uid://cdhven38okmh7" path="res://examples/consume.tres" id="2_dth2k"]
 
 [resource]
 script = ExtResource("1_l8dv0")
 Name = "Water"
-Interactions = null
+Interactions = Dictionary[Object, Object]({
+ExtResource("1_1sedc"): ExtResource("2_dth2k")
+})
 metadata/_custom_type_script = "uid://cti6rdk71imnh"
