@@ -1,8 +1,8 @@
-[gd_resource type="Resource" script_class="NamedInteraction" load_steps=2 format=3 uid="uid://cdhven38okmh7"]
+[gd_resource type="Resource" script_class="NamedElementInteraction" load_steps=2 format=3 uid="uid://bff810ufcpq5i"]
 
-[ext_resource type="Script" uid="uid://dyrk0f22wddnq" path="res://examples/NamedInteraction.cs" id="1_kcrsx"]
+[ext_resource type="Script" uid="uid://br1ikhbn2hals" path="res://module/implementations/elementinteraction/NamedElementInteraction.cs" id="1_kcrsx"]
 
 [resource]
 script = ExtResource("1_kcrsx")
 Name = "Consume"
-metadata/_custom_type_script = "uid://dyrk0f22wddnq"
+metadata/_custom_type_script = "uid://br1ikhbn2hals"
