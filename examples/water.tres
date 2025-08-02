@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Element" load_steps=2 format=3 uid="uid://shdfxunpdg36"]
+
+[ext_resource type="Script" uid="uid://cti6rdk71imnh" path="res://module/Element.cs" id="1_l8dv0"]
+
+[resource]
+script = ExtResource("1_l8dv0")
+Name = "Water"
+Interactions = null
+metadata/_custom_type_script = "uid://cti6rdk71imnh"
