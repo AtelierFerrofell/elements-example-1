@@ -1,9 +1,0 @@
-[gd_resource type="Resource" script_class="Element" load_steps=2 format=3 uid="uid://bouh3b51qqrmp"]
-
-[ext_resource type="Script" uid="uid://cti6rdk71imnh" path="res://modules/elements/Element.cs" id="1_kxbjb"]
-
-[resource]
-script = ExtResource("1_kxbjb")
-Name = "Earth"
-Interactions = null
-metadata/_custom_type_script = "uid://cti6rdk71imnh"
