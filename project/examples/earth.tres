@@ -1,11 +1,9 @@
-[gd_resource type="Resource" script_class="Element" load_steps=3 format=3 uid="uid://bouh3b51qqrmp"]
+[gd_resource type="Resource" script_class="Element" load_steps=2 format=3 uid="uid://bouh3b51qqrmp"]
 
-[ext_resource type="Resource" uid="uid://coipqfcaheyix" path="res://examples/no_composition.tres" id="1_claae"]
-[ext_resource type="Script" uid="uid://cti6rdk71imnh" path="res://module/Element.cs" id="1_kxbjb"]
+[ext_resource type="Script" uid="uid://cti6rdk71imnh" path="res://modules/elements/Element.cs" id="1_kxbjb"]
 
 [resource]
 script = ExtResource("1_kxbjb")
 Name = "Earth"
 Interactions = null
-Composition = ExtResource("1_claae")
 metadata/_custom_type_script = "uid://cti6rdk71imnh"

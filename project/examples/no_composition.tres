@@ -1,7 +1,0 @@
-[gd_resource type="Resource" script_class="NoElementComposition" load_steps=2 format=3 uid="uid://coipqfcaheyix"]
-
-[ext_resource type="Script" uid="uid://bi3is6o5xvo1w" path="res://module/implementations/elementcomposition/NoElementComposition.cs" id="1_fljbc"]
-
-[resource]
-script = ExtResource("1_fljbc")
-metadata/_custom_type_script = "uid://bi3is6o5xvo1w"

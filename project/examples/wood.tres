@@ -1,8 +1,7 @@
-[gd_resource type="Resource" script_class="Element" load_steps=6 format=3 uid="uid://d0g8ahh0yi3fu"]
+[gd_resource type="Resource" script_class="Element" load_steps=5 format=3 uid="uid://d0g8ahh0yi3fu"]
 
 [ext_resource type="Resource" uid="uid://bouh3b51qqrmp" path="res://examples/earth.tres" id="1_3j5c4"]
-[ext_resource type="Script" uid="uid://cti6rdk71imnh" path="res://module/Element.cs" id="1_6rhjj"]
-[ext_resource type="Resource" uid="uid://coipqfcaheyix" path="res://examples/no_composition.tres" id="1_g1dfa"]
+[ext_resource type="Script" uid="uid://cti6rdk71imnh" path="res://modules/elements/Element.cs" id="1_6rhjj"]
 [ext_resource type="Resource" uid="uid://c8fsu1jhr0npt" path="res://examples/water.tres" id="1_mtvbq"]
 [ext_resource type="Resource" uid="uid://bff810ufcpq5i" path="res://examples/consume.tres" id="2_3j5c4"]
 
@@ -13,5 +12,4 @@ Interactions = Dictionary[Object, Object]({
 ExtResource("1_mtvbq"): ExtResource("2_3j5c4"),
 ExtResource("1_3j5c4"): ExtResource("2_3j5c4")
 })
-Composition = ExtResource("1_g1dfa")
 metadata/_custom_type_script = "uid://cti6rdk71imnh"
