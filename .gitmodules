@@ -1,0 +1,3 @@
+[submodule "project/modules/elements"]
+	path = project/modules/elements
+	url = https://github.com/AtelierFerrofell/elements.git
