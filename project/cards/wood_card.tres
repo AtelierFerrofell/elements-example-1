@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Card" load_steps=5 format=3 uid="uid://dw2pdovx25a1x"]
+
+[ext_resource type="Resource" uid="uid://b05lepw52jqdb" path="res://elements/wood.tres" id="1_4cpde"]
+[ext_resource type="Script" uid="uid://h5nojatx3rch" path="res://modules/cards/Card.cs" id="1_ke0ca"]
+[ext_resource type="Script" uid="uid://cjra6rbquq6s3" path="res://ElementCardInfo.cs" id="2_fkw2c"]
+
+[sub_resource type="Resource" id="Resource_ob3k4"]
+script = ExtResource("2_fkw2c")
+Element = ExtResource("1_4cpde")
+metadata/_custom_type_script = "uid://cjra6rbquq6s3"
+
+[resource]
+script = ExtResource("1_ke0ca")
+Info = SubResource("Resource_ob3k4")
+metadata/_custom_type_script = "uid://h5nojatx3rch"
