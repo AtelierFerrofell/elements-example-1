@@ -1,3 +1,6 @@
 [submodule "project/modules/elements"]
 	path = project/modules/elements
 	url = https://github.com/AtelierFerrofell/elements.git
+[submodule "project/modules/cards"]
+	path = project/modules/cards
+	url = https://github.com/AtelierFerrofell/cards.git
