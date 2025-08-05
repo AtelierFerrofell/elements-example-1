@@ -12,5 +12,5 @@ metadata/_custom_type_script = "uid://dro7r660kp0wd"
 [resource]
 script = ExtResource("1_o12aa")
 Info = SubResource("Resource_y6fc4")
-Interactions = null
+Interactions = {}
 metadata/_custom_type_script = "uid://l5qqj0jb1nh6"

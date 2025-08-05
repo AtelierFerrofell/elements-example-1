@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqb0pj67fjqtl"]
+
+[ext_resource type="PackedScene" uid="uid://njsypk0ck8qn" path="res://cards/nodes/card.tscn" id="1_0ji50"]
+[ext_resource type="Resource" uid="uid://dw2pdovx25a1x" path="res://cards/resources/wood_card.tres" id="2_ltej7"]
+
+[node name="Card" instance=ExtResource("1_0ji50")]
+card = ExtResource("2_ltej7")
+
+[node name="ColorRect" parent="." index="0"]
+color = Color(0, 0.501961, 0, 1)
+
+[node name="Label" parent="." index="1"]
+text = "Wood"
