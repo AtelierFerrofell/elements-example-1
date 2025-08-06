@@ -6,11 +6,10 @@ public partial class ElementCard : Card
 {
 	protected override void OnInfoChanged()
 	{
-		// Clean up with guardrails later
-		if (Info is ElementCardInfo elementCardInfo && elementCardInfo.Element.Info is BasicElementInfo basicElementInfo)
+		if (Info is ElementCardInfo { Element: { Info: BasicElementInfo info } })
 		{
-			GetNode<ColorRect>("ColorRect").Color = basicElementInfo.Color;
-			GetNode<Label>("Label").Text = basicElementInfo.Name;
+			GetNode<ColorRect>("ColorRect").Color = info.Color;
+			GetNode<Label>("Label").Text = info.Name;
 		}
 		else
 		{
