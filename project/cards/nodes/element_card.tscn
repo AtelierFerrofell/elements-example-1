@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwifk3aqqa0mw"]
+
+[ext_resource type="Script" uid="uid://b63itnjeympij" path="res://cards/ElementCard.cs" id="1_8l5mp"]
+
+[node name="ElementCard" type="Node"]
+script = ExtResource("1_8l5mp")
+metadata/_custom_type_script = "uid://dc8nj68h4kc0s"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0

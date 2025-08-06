@@ -1,10 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://cqb0pj67fjqtl"]
+[gd_scene load_steps=5 format=3 uid="uid://1mxbjqa51bkt"]
 
-[ext_resource type="PackedScene" uid="uid://njsypk0ck8qn" path="res://cards/nodes/card.tscn" id="1_0ji50"]
-[ext_resource type="Resource" uid="uid://dw2pdovx25a1x" path="res://cards/resources/wood_card.tres" id="2_ltej7"]
+[ext_resource type="PackedScene" uid="uid://cwifk3aqqa0mw" path="res://cards/nodes/element_card.tscn" id="1_wrbe1"]
+[ext_resource type="Resource" uid="uid://b05lepw52jqdb" path="res://elements/wood.tres" id="2_ltej7"]
+[ext_resource type="Script" uid="uid://cjra6rbquq6s3" path="res://cards/ElementCardInfo.cs" id="3_rwwlc"]
 
-[node name="Card" instance=ExtResource("1_0ji50")]
-card = ExtResource("2_ltej7")
+[sub_resource type="Resource" id="Resource_ltej7"]
+script = ExtResource("3_rwwlc")
+Element = ExtResource("2_ltej7")
+metadata/_custom_type_script = "uid://cjra6rbquq6s3"
+
+[node name="ElementCard" instance=ExtResource("1_wrbe1")]
+Info = SubResource("Resource_ltej7")
 
 [node name="ColorRect" parent="." index="0"]
 color = Color(0, 0.501961, 0, 1)
