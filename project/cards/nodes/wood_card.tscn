@@ -15,5 +15,5 @@ Info = SubResource("Resource_ltej7")
 [node name="ColorRect" parent="." index="0"]
 color = Color(0, 0.501961, 0, 1)
 
-[node name="Label" parent="." index="1"]
+[node name="Label" parent="ColorRect" index="0"]
 text = "Wood"

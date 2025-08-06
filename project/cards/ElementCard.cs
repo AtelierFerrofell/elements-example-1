@@ -6,15 +6,17 @@ public partial class ElementCard : Card
 {
 	protected override void OnInfoChanged()
 	{
+		ColorRect colorRect = GetNode<ColorRect>("ColorRect");
+		Label label = colorRect.GetNode<Label>("Label");
 		if (Info is ElementCardInfo { Element: { Info: BasicElementInfo info } })
 		{
-			GetNode<ColorRect>("ColorRect").Color = info.Color;
-			GetNode<Label>("Label").Text = info.Name;
+			colorRect.Color = info.Color;
+			label.Text = info.Name;
 		}
 		else
 		{
-			GetNode<ColorRect>("ColorRect").Color = Colors.White;
-			GetNode<Label>("Label").Text = "";
+			colorRect.Color = Colors.White;
+			label.Text = "";
 		}
 	}
 }
