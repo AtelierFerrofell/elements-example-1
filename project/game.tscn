@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://cnxkyf8ifejbt"]
+
+[ext_resource type="Script" uid="uid://nav5psk5pqrk" path="res://modules/cards/Deck.cs" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://jgnmjbybqy7t" path="res://cards/nodes/wood_card.tscn" id="2_feb5d"]
+[ext_resource type="PackedScene" uid="uid://3jgxcvaa3qwv" path="res://cards/nodes/water_card.tscn" id="3_fc0e3"]
+[ext_resource type="Script" uid="uid://jpanprn1n528" path="res://modules/cards/Hand.cs" id="4_fc0e3"]
+
+[node name="Game" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Deck" type="Node" parent="."]
+script = ExtResource("1_80nbo")
+metadata/_custom_type_script = "uid://nav5psk5pqrk"
+
+[node name="Water" parent="Deck" instance=ExtResource("3_fc0e3")]
+
+[node name="Wood" parent="Deck" instance=ExtResource("2_feb5d")]
+
+[node name="Hand" type="Node" parent="." node_paths=PackedStringArray("Deck")]
+script = ExtResource("4_fc0e3")
+Deck = NodePath("../Deck")
+metadata/_custom_type_script = "uid://jpanprn1n528"

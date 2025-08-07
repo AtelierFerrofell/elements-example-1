@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://1mxbjqa51bkt"]
+[gd_scene load_steps=5 format=3 uid="uid://jgnmjbybqy7t"]
 
 [ext_resource type="PackedScene" uid="uid://cwifk3aqqa0mw" path="res://cards/nodes/element_card.tscn" id="1_wrbe1"]
 [ext_resource type="Resource" uid="uid://b05lepw52jqdb" path="res://elements/wood.tres" id="2_ltej7"]
@@ -12,8 +12,8 @@ metadata/_custom_type_script = "uid://cjra6rbquq6s3"
 [node name="ElementCard" instance=ExtResource("1_wrbe1")]
 Info = SubResource("Resource_ltej7")
 
-[node name="ColorRect" parent="." index="0"]
+[node name="Front" parent="." index="0"]
 color = Color(0, 0.501961, 0, 1)
 
-[node name="Label" parent="ColorRect" index="0"]
+[node name="Name" parent="Front" index="0"]
 text = "Wood"

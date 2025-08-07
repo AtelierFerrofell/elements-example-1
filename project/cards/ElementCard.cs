@@ -2,21 +2,27 @@ using Godot;
 using System;
 
 [Tool]
+[GlobalClass]
 public partial class ElementCard : Card
 {
 	protected override void OnInfoChanged()
 	{
-		ColorRect colorRect = GetNode<ColorRect>("ColorRect");
-		Label label = colorRect.GetNode<Label>("Label");
+		ColorRect front = GetNode<ColorRect>("Front");
+		Label name = front.GetNode<Label>("Name");
 		if (Info is ElementCardInfo { Element: { Info: BasicElementInfo info } })
 		{
-			colorRect.Color = info.Color;
-			label.Text = info.Name;
+			front.Color = info.Color;
+			name.Text = info.Name;
 		}
 		else
 		{
-			colorRect.Color = Colors.White;
-			label.Text = "";
+			front.Color = Colors.White;
+			name.Text = "";
 		}
+	}
+
+	public override void Reveal()
+	{
+		GetNode<ColorRect>("Back").Hide();
 	}
 }
